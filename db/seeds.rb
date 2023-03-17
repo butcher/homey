@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+users = User.create([
+  {full_name: 'Pavel Nikitin'},
+  {full_name: 'Ben McLaren'},
+  {full_name: 'Sayinthen Vivekanantham'}
+])
+
+projects = Project.create([
+  {name: 'RightScale cloud development platform', status: :archived},
+  {name: 'AutoHub CRM for Toyota dealer in Moscow', status: :archived},
+  {name: 'MomTrusted childcare social network', status: :archived},
+  {name: 'Cowboy ebike and commute platform', status: :archived}
+])

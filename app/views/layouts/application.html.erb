@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <% if flash.notice %>
+      <div style='float: right; background-color: lightgreen; padding: 10px; border-radius:10px;'><%= flash.notice %></div>
+    <% end %>
+    <% if flash.alert %>
+      <div style='float: right; background-color: pink; padding: 10px; border-radius:10px;'><%= flash.alert %></div>
+    <% end %>
     <%= yield %>
   </body>
 </html>

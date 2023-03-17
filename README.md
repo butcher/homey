@@ -1,24 +1,12 @@
-# README
+## Task
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Use Ruby on Rails to build a project conversation history. A user should be able to:
+ - leave a comment
+ - change the status of the project
 
-Things you may want to cover:
+The project conversation history should list comments and changes in status.
+Please don’t spend any more than 3 hours on this task.
 
-* Ruby version
+## Preparations
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In order to prefill db with some seeds please run `rake db:seed` before play with application.
