@@ -1,5 +1,6 @@
 class Project < ApplicationRecord
   has_many :comments
+  has_many :performed_actions
 
   enum status: {
     pending: 0,

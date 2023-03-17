@@ -15,7 +15,10 @@
       <tr>
         <td><%= project.name %></td>
         <td><%= project.status.humanize %></td>
-        <td><%= link_to 'show more...', project_path(project) %></td>
+        <td>
+          <%= link_to 'show more...', project_path(project) %></br>
+          <%= link_to 'history', project_history_path(project) %>
+        </td>
       </tr>
     <% end %>
   </tbody>

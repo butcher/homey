@@ -1,6 +1,7 @@
 <div>
   <h1>Project: <%= @project.name %></h1>
-  <%= link_to '<- Back', projects_path%>
+  <%= link_to '<- Back', projects_path%></br>
+  <%= link_to 'History', project_history_path(@project)%>
   <div>The current status is "<%= @project.status.humanize %>", set status to:
     <% Project.statuses.keys.without(@project.status).each do |status| %>
       <%= button_to(status.humanize, project_update_status_path(project_id: @project.id, status: status), form: {style: 'display: inline'}, method: :put) %>

@@ -1,0 +1,9 @@
+<div>
+  <h1>History for: <%= @project.name %></h1>
+  <%= link_to '<- Back', projects_path%>
+  <% @performed_actions.each do |action| %>
+    <div>
+      <%= action.description %>
+    </div>
+  <% end %>
+</div>
